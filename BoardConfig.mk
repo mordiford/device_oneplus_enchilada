@@ -23,7 +23,8 @@ DEVICE_PATH := device/oneplus/enchilada
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Kernel
-TARGET_KERNEL_CONFIG := enchilada_defconfig
+TARGET_KERNEL_CONFIG := blu_spark_defconfig
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-8.x/bin
 
 # inherit from the proprietary version
 -include vendor/oneplus/enchilada/BoardConfigVendor.mk
